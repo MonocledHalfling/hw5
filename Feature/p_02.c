@@ -5,9 +5,9 @@ char ls[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
              'U', 'V', 'W', 'X', 'Y', 'Z'};
 
 void p_02(void) {
-    FILE *file = fopen("/Users/iseongmin/CLionProjects/hw5/Data/alphabet.txt", "w");
+    FILE *file = fopen("C:/Users/PC/CLionProjects/hw5/data/alphabet.txt", "w");
     if (file == NULL) {
-        printf("íŒŒì¼ ì—´ê¸° ì‹¤íŒ¨\n");
+        printf("ÆÄÀÏ ¿­±â ½ÇÆĞ\n");
         return;
     }
 
@@ -15,6 +15,6 @@ void p_02(void) {
         fprintf(file, "%c ", ls[i%26]);
     }
 
-    printf("%dê°œì˜ ì•ŒíŒŒë²³ì´ alphabet.txt íŒŒì¼ì— ì €ì¥ë˜ì—ˆìŠµë‹ˆë‹¤.\n", 1000);
+    printf("%d°³ÀÇ ¾ËÆÄºªÀÌ alphabet.txt ÆÄÀÏ¿¡ ÀúÀåµÇ¾ú½À´Ï´Ù.\n", 1000);
     fclose(file);
 }

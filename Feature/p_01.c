@@ -27,9 +27,9 @@ void generateLotto(int lotto[]) {
 void p_01(void) {
     srand((unsigned int)time(NULL));
 
-    FILE *file = fopen("/Users/iseongmin/CLionProjects/hw5/lotto.txt", "w");
+    FILE *file = fopen("C:/Users/PC/CLionProjects/hw5/data/lotto.txt", "w");
     if (file == NULL) {
-        printf("韺岇澕 鞐搓赴 鞁ろ尐\n");
+        printf("颇老 凯扁 角菩\n");
         return;
     }
 
@@ -43,5 +43,5 @@ void p_01(void) {
     }
 
     fclose(file);
-    printf("lotto.txt 韺岇澕 靸濎劚 鞕勲\n");
+    printf("lotto.txt 颇老 积己 肯丰\n");
 }

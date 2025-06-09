@@ -10,12 +10,12 @@ void copyFile(FILE *copyFile, FILE *pastFile) {
 }
 
 void p_03(void) {
-    FILE *file1 = fopen("/Users/iseongmin/CLionProjects/hw5/Data/a1.txt", "r");
-    FILE *file2 = fopen("/Users/iseongmin/CLionProjects/hw5/Data/a2.txt", "r");
-    FILE *file3 = fopen("/Users/iseongmin/CLionProjects/hw5/Data/a3.txt", "w");
+    FILE *file1 = fopen("C:/Users/PC/CLionProjects/hw5/data/a1.txt", "r");
+    FILE *file2 = fopen("C:/Users/PC/CLionProjects/hw5/data/a2.txt", "r");
+    FILE *file3 = fopen("C:/Users/PC/CLionProjects/hw5/data/a3.txt", "w");
 
     if (file1 == NULL || file2 == NULL || file3 == NULL) {
-        perror("ÌååÏùº Ïó¥Í∏∞ Ïã§Ìå®");
+        perror("∆ƒ¿œ ø≠±‚ Ω«∆–");
         return;
     }
 
@@ -23,7 +23,7 @@ void p_03(void) {
     fputc('\n', file3);
     copyFile(file2, file3);
 
-    printf("ÌååÏùº Î≥ëÌï© ÏôÑÎ£å: a3.txt\n");
+    printf("∆ƒ¿œ ∫¥«’ øœ∑·: a3.txt\n");
     fclose(file1);
     fclose(file2);
     fclose(file3);

@@ -8,13 +8,13 @@ int p_09(void)
     char bina[33], binb[33], btmp[33];
 
     my_itoa(a, bina, 2);
-    printf(" aì˜ 2ì§„ìˆ˜:%32s\n", bina);
+    printf(" aÀÇ 2Áø¼ö:%32s\n", bina);
 
     my_itoa(~a, binb, 2);
-    printf("~aì˜ 2ì§„ìˆ˜:%32s\n", binb);
+    printf("~aÀÇ 2Áø¼ö:%32s\n", binb);
 
     my_itoa(b, binb, 2);
-    printf(" bì˜ 2ì§„ìˆ˜:%32s\n", binb);
+    printf(" bÀÇ 2Áø¼ö:%32s\n", binb);
 
     my_itoa(a & b, btmp, 2);
     printf(" a & b  :%32s\n", btmp);
@@ -54,7 +54,7 @@ void my_itoa(int value, char *str, int base) {
 
     buf[i] = '\0';
 
-    // ë’¤ì§‘ê¸°
+    // µÚÁı±â
     for (int j = 0; j < i; j++) {
         str[j] = buf[i - j - 1];
     }

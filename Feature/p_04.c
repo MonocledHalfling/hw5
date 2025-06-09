@@ -12,14 +12,14 @@ void p_04(void) {
     p.name = (char *)malloc(20 * sizeof(char));
     p.phone_number = (char *)malloc(14 * sizeof(char));
 
-    printf("ì´ë¦„ ì…ë ¥ >");
+    printf("ÀÌ¸§ ÀÔ·Â >");
     scanf("%s", p.name);
-    printf("ì „í™”ë²ˆí˜¸ ì…ë ¥ >");
+    printf("ÀüÈ­¹øÈ£ ÀÔ·Â >");
     scanf("%s", p.phone_number);
-    printf("ë²¨ ë²ˆí˜¸ ì…ë ¥ >");
+    printf("º§ ¹øÈ£ ÀÔ·Â >");
     scanf("%d", &p.bell_num);
 
-    printf("ì´ë¦„: %s\n", p.name);
-    printf("ì „í™”ë²ˆí˜¸: %s\n", p.phone_number);
-    printf("ë²¨ ë²ˆí˜¸: %d\n", p.bell_num);
+    printf("ÀÌ¸§: %s\n", p.name);
+    printf("ÀüÈ­¹øÈ£: %s\n", p.phone_number);
+    printf("º§ ¹øÈ£: %d\n", p.bell_num);
 }

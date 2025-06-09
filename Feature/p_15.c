@@ -8,13 +8,13 @@ int p_15(void) {
 
     const int n = strlen(a);
 
-    // í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ ìƒì„±
+    // ÇÇº¸³ªÄ¡ ¼ö¿­ »ý¼º
     fibo[1] = 1;
     fibo[2] = 1;
     for (i = 3; i < 10; i++)
         fibo[i] = fibo[i - 2] + fibo[i - 1];
 
-    // ë°ì´í„° ì¶œë ¥
+    // µ¥ÀÌÅÍ Ãâ·Â
     printf("Current Data \n\n");
     for (i = 0; i < 20; i++)
         printf(" %c ", a[i]);
@@ -22,18 +22,18 @@ int p_15(void) {
     printf("\n\n Input Key : ");
     scanf(" %c", &key);
 
-    // í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—ì„œ në³´ë‹¤ í° ìµœì†Œ ìˆ˜ ì°¾ê¸°
+    // ÇÇº¸³ªÄ¡ ¼ö¿¡¼­ nº¸´Ù Å« ÃÖ¼Ò ¼ö Ã£±â
     while (n > j) {
         k = k + 1;
         j = fibo[k];
     }
 
-    // í”¼ë³´ë‚˜ì¹˜ ê²€ìƒ‰ ì¤€ë¹„
+    // ÇÇº¸³ªÄ¡ °Ë»ö ÁØºñ
     i = fibo[k - 1];
     p = fibo[k - 2];
     q = fibo[k - 3];
 
-    // í”¼ë³´ë‚˜ì¹˜ ê²€ìƒ‰ ì‹œìž‘
+    // ÇÇº¸³ªÄ¡ °Ë»ö ½ÃÀÛ
     while (i) {
         if (key < a[i]) {
             if (q == 0)

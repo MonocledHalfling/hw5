@@ -15,16 +15,16 @@ int p_11(void)
         num[i] = rand() % 9 + 1;  // 1~9
     }
 
-    printf("êµ¬êµ¬ë‹¨ ë¬¸ì œí’€ê¸°\n\n");
-    printf("ê° ë¬¸ì œì˜ ë‹µì„ ì…ë ¥í•˜ê³ \n");
-    printf("Enter í•˜ì‹œì˜¤.\n\n");
+    printf("±¸±¸´Ü ¹®Á¦Ç®±â\n\n");
+    printf("°¢ ¹®Á¦ÀÇ ´äÀ» ÀÔ·ÂÇÏ°í\n");
+    printf("Enter ÇÏ½Ã¿À.\n\n");
 
     for (i = 0; i < 10; i++) {
         printf("%2d: %d * %d = ?\n", i + 1, dan[i], num[i]);
     }
 
     for (i = 0; i < 10; i++) {
-        gotoxy(10, 6 + i); // (10, y) ìœ„ì¹˜ë¡œ ì´ë™í•´ì„œ ë‹µ ì…ë ¥
+        gotoxy(10, 6 + i); // (10, y) À§Ä¡·Î ÀÌµ¿ÇØ¼­ ´ä ÀÔ·Â
         fflush(stdin);
         scanf("%d", &dap[i]);
     }

@@ -22,7 +22,7 @@ int p_16(void) {
                 const int temp = r[i];
                 r[i] = r[i + 1];
                 r[i + 1] = temp;
-                flag = i + 1; // ë§ˆì§€ë§‰ìœ¼ë¡œ swapëœ ìœ„ì¹˜ë¥¼ ê¸°ì–µ
+                flag = i + 1; // ¸¶Áö¸·À¸·Î swapµÈ À§Ä¡¸¦ ±â¾ï
             }
         }
     }

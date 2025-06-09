@@ -22,12 +22,12 @@ int p_13(void)
 int menu_display(void)
 {
     int select;
-    system("cls"); // Windows ì½˜ì†”ì—ì„œ í™”ë©´ í´ë¦¬ì–´
-    printf("êµ¬êµ¬ë‹¨ í”„ë¡œê·¸ëž¨\n\n");
-    printf("1. êµ¬êµ¬ë‹¨ ì „ì²´ ì¶œë ¥\n");
-    printf("2. ì›í•˜ëŠ” ë‹¨ë§Œ ì¶œë ¥\n");
-    printf("3. í”„ë¡œê·¸ëž¨ ì¢…ë£Œ\n\n");
-    printf("ë©”ë‰´ë²ˆí˜¸ ìž…ë ¥í›„ Enter>");
+    system("cls"); // Windows ÄÜ¼Ö¿¡¼­ È­¸é Å¬¸®¾î
+    printf("±¸±¸´Ü ÇÁ·Î±×·¥\n\n");
+    printf("1. ±¸±¸´Ü ÀüÃ¼ Ãâ·Â\n");
+    printf("2. ¿øÇÏ´Â ´Ü¸¸ Ãâ·Â\n");
+    printf("3. ÇÁ·Î±×·¥ Á¾·á\n\n");
+    printf("¸Þ´º¹øÈ£ ÀÔ·ÂÈÄ Enter>");
     scanf("%d", &select);
     return select;
 }
@@ -35,7 +35,7 @@ int menu_display(void)
 void guguall(void)
 {
     system("cls");
-    printf("êµ¬êµ¬ë‹¨ ì „ì²´ ì¶œë ¥\n\n");
+    printf("±¸±¸´Ü ÀüÃ¼ Ãâ·Â\n\n");
     for (int i = 1; i <= 9; i++) {
         for (int j = 1; j <= 9; j++) {
             printf("%d*%d=%2d ", j, i, j * i);
@@ -49,8 +49,8 @@ void gugusel(void)
 {
     int dan;
     system("cls");
-    printf("ì›í•˜ëŠ” ë‹¨ë§Œ ì¶œë ¥ \n\n");
-    printf("ì¶œë ¥í•  ë‹¨ì„ ìž…ë ¥í•˜ê³  Enter>");
+    printf("¿øÇÏ´Â ´Ü¸¸ Ãâ·Â \n\n");
+    printf("Ãâ·ÂÇÒ ´ÜÀ» ÀÔ·ÂÇÏ°í Enter>");
     scanf("%d", &dan);
     for (int i = 1; i <= 9; i++) {
         printf("%d*%d=%2d \n", dan, i, dan * i);
@@ -61,8 +61,8 @@ void gugusel(void)
 void presskey(void)
 {
     char c;
-    fflush(stdin); // ìž…ë ¥ ë²„í¼ ë¹„ìš°ê¸°
+    fflush(stdin); // ÀÔ·Â ¹öÆÛ ºñ¿ì±â
     printf("\n\n");
-    printf("Enterë¥¼ ëˆ„ë¥´ë©´ ë©”ì¸ ë©”ë‰´ë¡œ...");
-    scanf("%c", &c); // ì•„ë¬´ í‚¤ë‚˜ ìž…ë ¥ ëŒ€ê¸°
+    printf("Enter¸¦ ´©¸£¸é ¸ÞÀÎ ¸Þ´º·Î...");
+    scanf("%c", &c); // ¾Æ¹« Å°³ª ÀÔ·Â ´ë±â
 }

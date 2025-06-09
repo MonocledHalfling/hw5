@@ -3,9 +3,9 @@
 
 int p_07(void) {
     #ifdef LEVEL
-    printf("ì „ë¬¸ê°€ìš© í”„ë¡œê·¸ë¨\n");
+    printf("Àü¹®°¡¿ë ÇÁ·Î±×·¥\n");
     #else
-    printf("ì´ˆë³´ììš© í”„ë¡œê·¸ë¨");
+    printf("ÃÊº¸ÀÚ¿ë ÇÁ·Î±×·¥");
     #endif
     return 0;
 }

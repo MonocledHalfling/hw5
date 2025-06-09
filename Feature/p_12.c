@@ -11,27 +11,25 @@ void p_12(void) {
 }
 
 void p_12_time(void) {
-    time_t start, end;
-    double i, pst, sum = 0;
+    double sum = 0;
 
-    start = time(NULL);
-    for (i = 0; i < 30000000; i++)
+    const time_t start = time(NULL);
+    for (double i = 0; i < 30000000; i++)
         sum += i;
-    end = time(NULL);
+    const time_t end = time(NULL);
 
-    pst = difftime(end, start);
+    const double pst = difftime(end, start);
     printf("time: %f\n", pst);
 }
 
 void p_12_clock(void) {
-    clock_t start, end;
-    double i, pst, sum = 0;
+    double sum = 0;
 
-    start = clock();
-    for (i = 0; i < 30000000; i++)
+    const clock_t start = clock();
+    for (double i = 0; i < 30000000; i++)
         sum += i;
-    end = clock();
+    const clock_t end = clock();
 
-    pst = (double) (end - start) / CLOCKS_PER_SEC;
+    const double pst = (double) (end - start) / CLOCKS_PER_SEC;
     printf("time: %f\n", pst);
 }

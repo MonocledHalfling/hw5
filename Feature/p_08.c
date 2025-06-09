@@ -4,7 +4,7 @@ int dectobin(int n);
 
 int p_08(void) {
     int n;
-    printf("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
+    printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ°í Enter>");
     scanf("%d", &n);
     dectobin(n);
     printf("\n");
